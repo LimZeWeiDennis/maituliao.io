@@ -1,0 +1,35 @@
+.header {
+    display:flex;
+    flex-direction: row;
+    background-color: #98BEF8;
+    height:100%;
+}
+
+.img {
+    margin-left:15%;
+    width: 30%;
+    margin-right:5%;
+    height:50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 20pt;
+
+}
+
+.title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.appTitle {
+    font-size:72pt;
+    color: #0049a0;
+}
+
+.appSubtitle {
+    font-size: 16pt;
+    color: white;
+}
