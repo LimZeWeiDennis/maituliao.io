@@ -1,26 +1,41 @@
 .mainBody {
     display:flex;
     flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 2%;
+    padding: 2% 10% 10% 10%;
     background-color: white;
 }
 
 .textBox {
     display:flex;
+    flex:1;
     flex-direction: column;
-    margin-left:15%;
-    margin-right:15%;
+    text-align:center;
+    justify-content: space-around;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .teamTitle {
     color: black;
-    font-size: 35pt;
+    font-size: 24pt;
+    font-family: Poppins;
+    font-weight: bolder;
 }
 
 .mainText {
     color: black;
-    font-size: 18pt;
-    margin-top: 8pt;
+    font-size: 14pt;
+    margin-top: 10pt;
+    font-family: Inter;
+}
+
+@media only screen and (max-width: 720px) {
+    .mainBody {
+        display:flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        background-color: white;
+    }
 }
