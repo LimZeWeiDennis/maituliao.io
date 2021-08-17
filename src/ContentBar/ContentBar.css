@@ -1,0 +1,100 @@
+.contentBar {
+    position: sticky;
+    top:0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    top:-1px;
+    padding: 1px 0 0 0;
+
+}
+
+.stuck {
+    position: sticky;
+    top:0;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    top:-1px;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 4px 4px -2px gray;
+
+}
+
+.chapterBox {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding-left:2.5%;
+    padding-right:2.5%;
+}
+
+.chapterLine {
+    color: #585858;
+    height: 0.1em;
+    background-color: #585858;
+
+}
+
+.chapterNumber {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 2px solid #585858;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bolder;
+    animation-delay: 2s;
+    transition: all 0.5s;
+}
+
+.chapterNumber:hover{
+    color: #fff;
+    background-color: black;
+
+}
+
+.chapterText {
+    font-weight:bolder;
+    font-family: Inter;
+    font-size:18pt;
+    margin-top:10px;
+}
+
+.chapterNumberSticky {
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    padding: 4px;
+    border: 2px solid #585858;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+.chapterNumberSticky:hover{
+    color: #fff;
+    background-color: black;
+}
+
+.chapterTextSticky {
+    font-weight:bold;
+    font-family: Inter;
+    font-size:12pt;
+    margin-top:10px;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+

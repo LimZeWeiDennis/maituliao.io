@@ -1,15 +1,21 @@
-import React from "react";
+import React, {Fragment, useEffect, useState, useRef} from "react";
+import {InView, useInView} from 'react-intersection-observer';
+
 import mainSplashScreen from '../assets/mainSplashScreen.png';
 
 import './LandingHeader.css';
 import './TeamMembers'
+
 import TeamMembers from "./TeamMembers";
+import ContentBar from '../ContentBar/ContentBar';
 
 
 const LandingHeader = props => {
 
     return (
         <div>
+            <ContentBar />
+            <TeamMembers />
             <div className='header' >
                 <img src={mainSplashScreen} className='img'/>
                 <div className='title'>
@@ -18,7 +24,8 @@ const LandingHeader = props => {
                 </div>
 
             </div>
-            <TeamMembers/>
+
+
         </div>
 
 
