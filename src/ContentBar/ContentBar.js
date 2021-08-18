@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import './ContentBar.css';
 
-const ContentBar = (...rest) => {
+const ContentBar = (props, ...rest) => {
 
     const [isSticky, setIsSticky] = useState(false);
     const ref = useRef();
@@ -21,11 +21,15 @@ const ContentBar = (...rest) => {
         }
     }, []);
 
+
+
     return (
 
         <div className={isSticky ?"stuck" : "contentBar"} ref={ref} {...rest}>
             <div className='chapterBox'>
-                <div className={isSticky ?"chapterNumberSticky" : "chapterNumber"}> 1 </div>
+                <div className={isSticky ?"chapterNumberSticky" : "chapterNumber"} >
+                    1
+                </div>
                 <div className={isSticky ?"chapterTextSticky" : "chapterText"}>Overview</div>
             </div>
 

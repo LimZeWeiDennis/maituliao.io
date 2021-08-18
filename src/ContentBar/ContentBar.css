@@ -54,11 +54,13 @@
     font-weight: bolder;
     animation-delay: 2s;
     transition: all 0.5s;
+    cursor:pointer;
 }
 
 .chapterNumber:hover{
     color: #fff;
     background-color: black;
+    cursor:pointer;
 
 }
 
@@ -81,11 +83,13 @@
     font-size: 14px;
     font-weight: bolder;
     transition: all 0.5s;
+    cursor:pointer;
 }
 
 .chapterNumberSticky:hover{
     color: #fff;
     background-color: black;
+    cursor:pointer;
 }
 
 .chapterTextSticky {
