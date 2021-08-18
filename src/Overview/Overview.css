@@ -1,0 +1,81 @@
+.overviewContent {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 10% 0;
+}
+
+.overviewHeader {
+    display:flex;
+    flex-direction: row;
+    background-color: #F9B9BB;
+    height:100%;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.overviewTitle {
+    font-size:48pt;
+    color: #A90206;
+    text-align:center;
+    padding: 3% 0 3% 0;
+}
+
+.motivation {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.contentText {
+    font-family: Poppins;
+    font-size:14pt;
+    line-height: 150%;
+
+}
+.contentTextBold {
+    font-family: Poppins;
+    font-size:14pt;
+    line-height: 150%;
+    font-weight: 600;
+
+}
+
+.contentTitle {
+    font-family: Inter;
+    font-size: 22pt;
+    font-weight: bolder;
+    padding-bottom:10%;
+}
+
+.motivationImg {
+    height:100%;
+    width:40%;
+    padding-right: 1%;
+}
+
+.prototypeGif {
+    padding-left: 10%;
+}
+
+.problemSolution {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+@media only screen and (max-width: 720px) {
+    .header {
+        display:flex;
+        flex-direction: column-reverse;
+        background-color: #98BEF8;
+        height:100%;
+    }
+}
+
