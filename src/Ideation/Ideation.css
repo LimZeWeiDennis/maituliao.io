@@ -111,6 +111,38 @@
     text-align: center;
 }
 
+.flex-direction-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-direction-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proposedSolutionTitle {
+    text-align: center;
+}
+
+.userScenarioTitle {
+    margin: 0 50px;
+}
+
+.proposedSolutionBody {
+    margin: 50px;
+}
+
+.imageCaption {
+    font-family: Inter;
+    font-size: 16pt;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 0% 0 5% 0;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 720px) {
     .header {

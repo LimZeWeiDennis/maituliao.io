@@ -1,6 +1,7 @@
 import React from "react";
 import "./Ideation.css";
 import KeyProblems from "./KeyProblems";
+import ProposedSolution from "./ProposedSolution";
 import Tasks from "./Tasks";
 
 const Ideation = props => {
@@ -12,6 +13,7 @@ const Ideation = props => {
             </div>
             <KeyProblems/>
             <Tasks/>
+            <ProposedSolution/>
         </div>
 
     )
