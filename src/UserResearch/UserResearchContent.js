@@ -34,7 +34,7 @@ const UserResearchContent = props => {
 
                 </div>
 
-                <img src={ResearchForm} className='motivationImg'/>
+                <img src={ResearchForm} alt="" className='motivationImg'/>
 
 
             </div>
@@ -174,8 +174,8 @@ const UserResearchContent = props => {
 
 
                     <div className="personaImageRow">
-                        <img src={UserPersona1} className='personaImage'/>
-                        <img src={UserPersona2} className='personaImage'/>
+                        <img src={UserPersona1} alt="" className='personaImage'/>
+                        <img src={UserPersona2} alt="" className='personaImage'/>
                     </div>
 
 

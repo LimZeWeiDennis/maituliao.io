@@ -1,0 +1,16 @@
+.prototypingHeader {
+  display:flex;
+  flex-direction: row;
+  background-color: #F9B9BB;
+  height:100%;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.prototypingTitle {
+  font-size:48pt;
+  color: #A90206;
+  text-align:center;
+  padding: 3% 0 3% 0;
+}

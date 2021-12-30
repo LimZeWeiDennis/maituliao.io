@@ -1,10 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 
 import LandingHeader from './Landing/LandingHeader';
 import ContentBar from './ContentBar/ContentBar';
 import Overview from "./Overview/Overview";
 import UserResearch from "./UserResearch/UserResearch";
 import Ideation from "./Ideation/Ideation";
+import Prototyping from './Prototyping/Prototyping';
+import Testing from './Testing/Testing';
+import FinalProduct from './FinalProduct/FinalProduct';
 
 import './App.css';
 
@@ -29,6 +32,9 @@ const App = props => {
           <Overview />
           <UserResearch/>
           <Ideation/>
+          <Prototyping />
+          <Testing />
+          <FinalProduct />
 
       </div>
   )

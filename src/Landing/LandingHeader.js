@@ -14,7 +14,7 @@ const LandingHeader = props => {
     return (
         <div>
             <div className='header' >
-                <img src={mainSplashScreen} className='img'/>
+                <img src={mainSplashScreen} alt="" className='img'/>
                 <div className='title'>
                     <h1 className="appTitle"> maituliao.io </h1>
                     <text className="appSubtitle"> CS3240 Group 9</text>

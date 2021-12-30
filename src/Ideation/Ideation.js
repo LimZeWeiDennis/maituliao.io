@@ -7,7 +7,7 @@ import Tasks from "./Tasks";
 const Ideation = props => {
 
     return (
-        <div>
+        <div id='ideation'>
             <div className='ideationHeader' >
                 <h1 className="ideationTitle"> Ideation </h1>
             </div>

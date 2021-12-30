@@ -67,7 +67,7 @@ const OverviewContent = props => {
 
                 </div>
 
-                <img src={Overview_Illustration} className='motivationImg'/>
+                <img src={Overview_Illustration} alt="" className='motivationImg'/>
 
             </div>
 

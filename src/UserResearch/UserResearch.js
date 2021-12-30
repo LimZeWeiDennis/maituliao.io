@@ -5,7 +5,7 @@ import UserResearchContent from "./UserResearchContent";
 const UserResearch = props => {
 
     return (
-        <div>
+        <div id="userResearch">
             <div className='researchHeader' >
                 <h1 className="researchTitle"> User Research </h1>
             </div>

@@ -1,28 +1,37 @@
 .contentBar {
     position: sticky;
-    top:0;
+    top: 0;
     background-color: white;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    display:flex;
+    display: flex; 
     flex-direction: row;
-    top:-1px;
+    top: -1px;
     padding: 1px 0 10% 0;
-
+    margin: 0 100px;
 }
 
 .stuck {
     position: sticky;
-    top:0;
-    justify-content: center;
+    top: 0;
+    justify-content: space-between;
     background-color:white;
     align-items: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    top:-1px;
-    padding: 10px 0 10px 0;
+    top: -1px;
+    padding: 10px 200px;
     box-shadow: 0 4px 4px -2px gray;
+}
 
+.lines {
+    justify-content: space-between;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .chapterBox {
@@ -30,15 +39,59 @@
     align-items: center;
     display:flex;
     flex-direction: column;
-    padding-left:2.5%;
-    padding-right:2.5%;
+    /* padding-left:2.5%; */
+    /* padding-right:2.5%; */
+}
+
+.line {
+    height: 3px;
+    margin-top: -30px;
+    background-color: #000;
+    animation-duration: 0.5s;
+    animation-name: line-right;
+    animation-fill-mode: forwards;
+}
+
+.noline {
+    height: 3px;
+    margin-top: -30px;
+    width: 80px;
+}
+
+.afterInitial {
+    animation-duration: 0.5s;
+    animation-name: line-left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-right {
+    0% {
+        width: 1px;
+        margin-right: 55.820px;
+    }
+    100% {
+        width: 80px;
+        margin-right: 0px;
+    }
+}
+
+@keyframes line-left {
+    0% {
+        width: 80px;
+        margin-right: 0px;
+        background-color: #000;
+    }
+    100% {
+        width: 1px;
+        margin-right: 55.820px;
+        background-color: #fff;
+    }
 }
 
 .chapterLine {
     color: #585858;
     height: 0.1em;
     background-color: #585858;
-
 }
 
 .chapterNumber {
@@ -76,7 +129,7 @@
     width: 21px;
     height: 21px;
     padding: 4px;
-    border: 2px solid #585858;
+    border: 2px solid #000;
     color: #000;
     text-align: center;
     font-family: Poppins;
@@ -84,6 +137,11 @@
     font-weight: bolder;
     transition: all 0.5s;
     cursor:pointer;
+}
+
+.notActive {
+    color: #999;
+    border-color: #999;
 }
 
 .chapterNumberSticky:hover{
@@ -99,6 +157,11 @@
     margin-top:10px;
     margin-left:3px;
     margin-right:3px;
+    padding: 0 -30px;
+    width: 120px;
+    text-align: center;
 }
 
-
+a {
+    text-decoration: none;
+}

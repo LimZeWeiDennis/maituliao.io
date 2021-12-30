@@ -53,7 +53,7 @@ const ProposedSolution = props => {
     <div>
       <div className="flex-direction-row">
         {/* Replace image with correct image */}
-        <img src={mainSplashScreen} style={{height: '500px', width: '100%'}}></img>
+        <img src={mainSplashScreen} alt="" style={{height: '500px', width: '100%'}}></img>
         <div style={{ width: '100%' }}>
           <h1 className="proposedSolutionTitle"> Proposed Solution </h1>
           {proposedSolutionText}
