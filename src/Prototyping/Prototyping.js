@@ -10,6 +10,7 @@ const Prototyping = props => {
                 <h1 className="prototypingTitle"> Prototyping </h1>
             </div>
             <LofiPrototyping/>
+
         </div>
 
     )
