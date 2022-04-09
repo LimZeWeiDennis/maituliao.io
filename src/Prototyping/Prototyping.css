@@ -8,9 +8,70 @@
 
 }
 
+.prototypingContent {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 10% 0;
+}
+
 .prototypingTitle {
   font-size:48pt;
   color: #A90206;
   text-align:center;
   padding: 3% 0 3% 0;
+}
+
+.horizontalContent {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 2% 0 2%;
+
+}
+
+.flexDirectionVertical{
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prototypingContentTitle {
+  font-family: Inter;
+  font-size: 22pt;
+  font-weight: bolder;
+  padding: 0% 0 2% 0;
+  text-align: center;
+}
+
+.contentText {
+  font-family: Poppins;
+  font-size:14pt;
+  line-height: 150%;
+  text-align: center;
+
+
+}
+
+.textUnderImage {
+  font-family: Poppins;
+  font-size: 12pt;
+  line-height: 120%;
+  font-style: italic;
+  text-align:justify;
+  color:grey;
+  padding:0 10% 0 10%;
+}
+
+.zoom {
+  height: 200px;
+  width: 100%;
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

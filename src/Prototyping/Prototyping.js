@@ -1,5 +1,6 @@
 import React from "react";
 import "./Prototyping.css";
+import LofiPrototyping from "./LofiPrototyping";
 
 const Prototyping = props => {
 
@@ -8,6 +9,8 @@ const Prototyping = props => {
             <div className='prototypingHeader' >
                 <h1 className="prototypingTitle"> Prototyping </h1>
             </div>
+            <LofiPrototyping/>
+
         </div>
 
     )

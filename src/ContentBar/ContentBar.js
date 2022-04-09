@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef, useCallback} from "react";
 import './ContentBar.css';
 import * as Scroll from 'react-scroll';
 
@@ -7,19 +7,10 @@ const ContentBar = (props, ...rest) => {
     const [isSticky, setIsSticky] = useState(false);
     const [section, setSection] = useState(-1);
     const [initialLoad, setInitialLoad] = useState(true);
-    const ref = useRef();
 
     const Link = Scroll.Link;
 
     useEffect(() => {
-        const cachedRef = ref.current,
-            observer = new IntersectionObserver(
-                ([e]) => setIsSticky(e.intersectionRatio < 1),
-                { threshold: [1] }
-            )
-
-        observer.observe(cachedRef)
-
         const headerIds = [
             'overview',
             'userResearch',
@@ -57,15 +48,29 @@ const ContentBar = (props, ...rest) => {
         window.addEventListener('scroll', handleScroll, { passive: true })
         setInitialLoad(false);
 
-        // unmount
+        // unmount component
         return function () {
-            observer.unobserve(cachedRef)
+            // observer.unobserve(cachedRef)
             window.removeEventListener('scroll', handleScroll)
         }
     }, [section]);
 
+    useEffect(() => {
+        const target = document.getElementById("lim");
+        const setSticky = () => {
+            if (target?.getBoundingClientRect()?.top <= 0) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        document.addEventListener("scroll", setSticky);
+        return () => window.removeEventListener("scroll", setSticky);
+    }, []);
+
     return (
-        <div className={isSticky ? "stuck" : "contentBar"} ref={ref} {...rest}>
+        <div id="lim" className={isSticky ? "stuck" : "contentBar"} {...rest}>
             <div className='chapterBox'>
                 <Link to="overview" smooth={true}>
                     <div className={isSticky ? "chapterNumberSticky" : "chapterNumber"}> 1 </div>
@@ -119,8 +124,6 @@ const ContentBar = (props, ...rest) => {
             </div>
 
         </div>
-
-
     )
 }
 
