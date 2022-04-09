@@ -11,6 +11,14 @@
     margin: 0 100px;
 }
 
+.referenceHack {
+    height: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #0049a0;
+}
+
 .stuck {
     position: sticky;
     top: 0;
