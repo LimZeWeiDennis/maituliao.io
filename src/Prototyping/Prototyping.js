@@ -1,6 +1,7 @@
 import React from "react";
 import "./Prototyping.css";
 import LofiPrototyping from "./LofiPrototyping";
+import CrazyEightGallery from "./CrazyEightGallery";
 
 const Prototyping = props => {
 
@@ -10,6 +11,7 @@ const Prototyping = props => {
                 <h1 className="prototypingTitle"> Prototyping </h1>
             </div>
             <LofiPrototyping/>
+            <CrazyEightGallery/>
 
         </div>
 
