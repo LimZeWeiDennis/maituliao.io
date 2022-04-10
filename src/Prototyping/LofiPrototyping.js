@@ -45,17 +45,7 @@ const LofiPrototyping = props => {
                     </text>
                 </div>
 
-
             </div>
-
-            <div style={{padding:'7% 15% 0 15%'}}>
-                <h1 className="prototypingContentTitle"> Individual Sketches </h1>
-                <text className='contentText'>
-                    Below is the gallery of individual sketches done up by each member in our team.
-                </text>
-            </div>
-
-
 
         </div>
 
