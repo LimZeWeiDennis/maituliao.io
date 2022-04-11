@@ -1,6 +1,7 @@
 import React from "react";
 import "./Prototyping.css";
 import mainSplashScreen from "../assets/mainSplashScreen.png";
+import ExpandableImage from "./ExpandableImage";
 
 const LofiPrototyping = props => {
 
@@ -30,7 +31,7 @@ const LofiPrototyping = props => {
 
             <div className="horizontalContent">
                 <div className="flexDirectionVertical">
-                    <img src={mainSplashScreen} alt="" className="zoom"></img>
+                    <ExpandableImage src={mainSplashScreen} alt="" className="zoom"></ExpandableImage>
                     <text className="textUnderImage">
                         Crazy 8’s activity is to come up with a layout for our 3 features: Shopping List,
                         Navigation and Item Finder interfaces.

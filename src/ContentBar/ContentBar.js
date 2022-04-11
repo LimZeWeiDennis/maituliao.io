@@ -56,7 +56,7 @@ const ContentBar = (props, ...rest) => {
     }, [section]);
 
     useEffect(() => {
-        const target = document.getElementById("lim");
+        const target = document.getElementById("navBar");
         const setSticky = () => {
             if (target?.getBoundingClientRect()?.top <= 0) {
                 setIsSticky(true);
@@ -70,7 +70,7 @@ const ContentBar = (props, ...rest) => {
     }, []);
 
     return (
-        <div id="lim" className={isSticky ? "stuck" : "contentBar"} {...rest}>
+        <div id="navBar" className={isSticky ? "stuck" : "contentBar"} {...rest}>
             <div className='chapterBox'>
                 <Link to="overview" smooth={true}>
                     <div className={isSticky ? "chapterNumberSticky" : "chapterNumber"}> 1 </div>

@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import Carousel from 'react-multi-carousel';
 import "./Prototyping.css";
 import 'react-multi-carousel/lib/styles.css'
@@ -29,7 +29,7 @@ const CrazyEightGallery = props => {
     };
 
     return (
-        <div >
+        <div>
 
             <div className='prototypingContent'>
 
@@ -43,6 +43,7 @@ const CrazyEightGallery = props => {
             </div>
 
             <Carousel
+                className="carousel"
                 responsive={responsive}
                 infinite={true}
                 autoPlay={false}
