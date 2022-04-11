@@ -14,18 +14,7 @@ import './App.css';
 
 
 const App = props => {
-
-    // const overviewRef = useRef(null);
-    //
-    // const useMountEffect = fun => useEffect(fun, [overviewRef.current]);
-    //
-    // const scrollToOverView = () => document.getElementById('overview').scrollIntoView({ block: 'end', behavior: 'smooth' });
-    //
-    // useMountEffect(scrollToOverView)
-
   return (
-
-
       <div>
           <LandingHeader/>
           <ContentBar />

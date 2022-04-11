@@ -1,5 +1,5 @@
 .contentBar {
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: white;
     justify-content: space-between;
@@ -30,6 +30,7 @@
     top: -1px;
     padding: 10px 200px;
     box-shadow: 0 4px 4px -2px gray;
+    z-index: 100;
 }
 
 .lines {
