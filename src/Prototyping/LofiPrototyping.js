@@ -1,7 +1,7 @@
 import React from "react";
 import "./Prototyping.css";
 import mainSplashScreen from "../assets/mainSplashScreen.png";
-import ExpandableImage from "./ExpandableImage";
+import ExpandableImage from "../ExpandableImage/ExpandableImage";
 
 const LofiPrototyping = props => {
 

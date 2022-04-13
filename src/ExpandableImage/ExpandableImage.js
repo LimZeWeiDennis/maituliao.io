@@ -1,12 +1,15 @@
-import React , {useState, useEffect} from "react";
-import "./Prototyping.css";
+import React, {useState, useEffect} from "react";
+import "./ExpandableImage.css";
 import Modal from 'react-modal';
+
 
 const ExpandableImage = props => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isDragging, setDragging] = useState({x: 0, y: 0});
     const [isScroll, setScroll] = useState(0);
+
+
 
     //listens for mouse event during mouse down and stores the current mouse position into isDragging
     const dragControl = e => {
@@ -18,8 +21,7 @@ const ExpandableImage = props => {
     const handleOpen = e => {
         if(isDragging.x === e.screenX && isDragging.y === e.screenY){
             setIsOpen(true);
-            setScroll(window.scrollY);
-            console.log(window.pageYOffset);
+            setScroll(window.scrollY);  // for potential scroll to close action
         }
     }
 
@@ -27,25 +29,8 @@ const ExpandableImage = props => {
         setIsOpen(false);
     }
 
-    // useEffect(()=>{
-    //
-    // })
-
     return (
         <div>
-            <Modal
-                className="modal"
-                isOpen={isOpen}
-                ariaHideApp={false}
-            >
-                <img
-                    className="expandedImage"
-                    src={props.src}
-                    onClick={handleClose}
-                    alt="no"
-                    draggable={false}
-                />
-            </Modal>
 
             <div
                 onMouseDown={dragControl}
@@ -58,9 +43,20 @@ const ExpandableImage = props => {
                      alt="no"
                 />
             </div>
-
-
-
+            {isOpen && <Modal
+                className="modal"
+                isOpen={isOpen}
+                ariaHideApp={false}
+                style={{overlay:{zIndex:100}}}
+            >
+                <img
+                    className="expandedImage"
+                    src={props.src}
+                    onClick={handleClose}
+                    alt="no"
+                    draggable={false}
+                />
+            </Modal>}
         </div>
     );
 

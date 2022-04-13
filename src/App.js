@@ -11,8 +11,6 @@ import FinalProduct from './FinalProduct/FinalProduct';
 
 import './App.css';
 
-
-
 const App = props => {
   return (
       <div>
@@ -24,7 +22,6 @@ const App = props => {
           <Prototyping />
           <Testing />
           <FinalProduct />
-
       </div>
   )
 }

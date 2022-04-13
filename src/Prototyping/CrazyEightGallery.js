@@ -4,7 +4,7 @@ import "./Prototyping.css";
 import 'react-multi-carousel/lib/styles.css'
 import mainSplashScreen from "../assets/mainSplashScreen.png";
 import userPersona1 from "../assets/userPersona1.jpg";
-import ExpandableImage from "./ExpandableImage";
+import ExpandableImage from "../ExpandableImage/ExpandableImage";
 
 const CrazyEightGallery = props => {
 

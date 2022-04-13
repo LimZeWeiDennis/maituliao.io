@@ -21,6 +21,7 @@ const ContentBar = (props, ...rest) => {
         ]
         const contentBarHeight = 81.7;
 
+
         const handleScroll = () => {
             //scroll downwards
             if (section < headerIds.length - 1) {
