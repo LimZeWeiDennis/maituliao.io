@@ -2,8 +2,11 @@ import React from "react";
 import Carousel from 'react-multi-carousel';
 import "./Prototyping.css";
 import 'react-multi-carousel/lib/styles.css'
-import mainSplashScreen from "../assets/mainSplashScreen.png";
-import userPersona1 from "../assets/userPersona1.jpg";
+import crazySketch1 from "../assets/prototype/crazySketch1.png";
+import crazySketch2 from "../assets/prototype/crazySketch.png";
+import crazySketch3 from "../assets/prototype/crazySketch2.png";
+import crazySketch4 from "../assets/prototype/crazySketch3.jpeg";
+import crazySketch5 from "../assets/prototype/crazySketch5.png";
 import ExpandableImage from "../ExpandableImage/ExpandableImage";
 
 const CrazyEightGallery = props => {
@@ -49,11 +52,11 @@ const CrazyEightGallery = props => {
                 autoPlay={false}
                 itemClass="carousel-item-padding-20-px"
             >
-                <ExpandableImage src={userPersona1 }/>
-                <ExpandableImage src={mainSplashScreen }/>
-                <ExpandableImage src={userPersona1 }/>
-                <ExpandableImage src={mainSplashScreen }/>
-                <ExpandableImage src={userPersona1 }/>
+                <ExpandableImage src={crazySketch1}/>
+                <ExpandableImage src={crazySketch5 }/>
+                <ExpandableImage src={crazySketch2 }/>
+                <ExpandableImage src={crazySketch3 }/>
+                <ExpandableImage src={crazySketch4 }/>
 
             </Carousel>
         </div>

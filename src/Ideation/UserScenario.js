@@ -1,5 +1,6 @@
 import React from "react";
 import "./Ideation.css";
+import ExpandableImage from "../ExpandableImage/ExpandableImage";
 
 const UserScenario = prop => {
   return (
@@ -9,7 +10,7 @@ const UserScenario = prop => {
           <h1 className="userScenarioTitle"> User Scenario {prop.id}: {prop.name} </h1>
           {prop.text}
         </div>
-        <img src={prop.comicSrc} alt="" style={{ height: '500px', width: '100%' }}></img>
+        <ExpandableImage src={prop.comicSrc} alt="" />
       </div>
       <div className="flex-direction-col">
         <img src={prop.userJourneyMapSrc} alt="" style={{ height: '1000px', width: '100%' }}></img>

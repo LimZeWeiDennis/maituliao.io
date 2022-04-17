@@ -2,8 +2,13 @@ import React from "react";
 import "./Ideation.css";
 import UserScenario from "./UserScenario";
 
-import mainSplashScreen from '../assets/mainSplashScreen.png';
-
+import illustration from "../assets/ideation/ideationIllustration1.png";
+import rachelUserScenarios from "../assets/ideation/rachelUserScenario.jpeg";
+import rachelUserJourney from "../assets/ideation/rachelUserJourney.png";
+import trevonUserJourney from "../assets/ideation/trevonUserJourney.png";
+import trevonUserJourney2 from "../assets/ideation/trevonUserJourney2.png";
+import trevonUserScenarios from "../assets/ideation/trevonUserScenario.jpeg";
+import trevonUserScenario2 from "../assets/ideation/trevonUserScenario2.jpeg";
 const ProposedSolution = props => {
   
   const proposedSolutionText = (
@@ -52,32 +57,30 @@ const ProposedSolution = props => {
   return (
     <div>
       <div className="flex-direction-row">
-        {/* Replace image with correct image */}
-        <img src={mainSplashScreen} alt="" style={{height: '500px', width: '100%'}}></img>
+        <img src={illustration} alt="" style={{height: '50%', width: '50%'}}></img>
         <div style={{ width: '100%' }}>
           <h1 className="proposedSolutionTitle"> Proposed Solution </h1>
           {proposedSolutionText}
         </div>
       </div>
-      {/* Replace image with correct image for each User Scenario */}
       <UserScenario 
         id='1' 
         name='Trevon' 
         text={trevonUserScenario}
-        comicSrc={mainSplashScreen}
-        userJourneyMapSrc={mainSplashScreen}/>
+        comicSrc={trevonUserScenarios}
+        userJourneyMapSrc={trevonUserJourney}/>
       <UserScenario 
         id='2' 
         name='Rachel' 
         text={rachelUserScenario}
-        comicSrc={mainSplashScreen}
-        userJourneyMapSrc={mainSplashScreen}/>
+        comicSrc={rachelUserScenarios}
+        userJourneyMapSrc={rachelUserJourney}/>
       <UserScenario 
         id='3' 
         name='Trevon' 
         text={secondTrevonUserScenario}
-        comicSrc={mainSplashScreen}
-        userJourneyMapSrc={mainSplashScreen}/>
+        comicSrc={trevonUserScenario2}
+        userJourneyMapSrc={trevonUserJourney2}/>
     </div>
   )
 }
