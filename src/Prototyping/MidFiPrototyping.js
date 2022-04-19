@@ -2,7 +2,7 @@ import React from "react";
 import "./Prototyping.css";
 import mainSplashScreen from "../assets/mainSplashScreen.png";
 import Carousel from "react-multi-carousel";
-import ExpandableImage from "./ExpandableImage";
+import ExpandableImage from "../ExpandableImage/ExpandableImage";
 import userPersona1 from "../assets/userPersona1.jpg";
 
 const MidFiPrototyping = props => {

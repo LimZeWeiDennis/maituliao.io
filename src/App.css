@@ -35,6 +35,13 @@
 .text {
   font-family: Inter;
 }
+.p {
+  font-family: Inter;
+}
+
+.modal-root{
+  z-index:105;
+}
 
 @keyframes App-logo-spin {
   from {

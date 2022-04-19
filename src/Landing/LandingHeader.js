@@ -6,6 +6,7 @@ import './LandingHeader.css';
 import './TeamMembers'
 
 import TeamMembers from "./TeamMembers";
+import ExpandableImage from "../ExpandableImage/ExpandableImage";
 
 
 
@@ -14,10 +15,10 @@ const LandingHeader = props => {
     return (
         <div>
             <div className='header' >
-                <img src={mainSplashScreen} alt="" className='img'/>
+                <ExpandableImage src={mainSplashScreen} alt="" />
                 <div className='title'>
                     <h1 className="appTitle"> maituliao.io </h1>
-                    <text className="appSubtitle"> CS3240 Group 9</text>
+                    <div className="appSubtitle"> CS3240 Group 9</div>
                 </div>
             </div>
 

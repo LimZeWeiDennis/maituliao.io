@@ -1,3 +1,23 @@
+.contentText {
+  font-family: Poppins;
+  font-size:14pt;
+  line-height: 150%;
+}
+
+.contentTitle {
+  font-family: Inter;
+  font-size: 22pt;
+  font-weight: bolder;
+  padding-bottom:5%;
+}
+
+.contentSubtitle {
+  font-family: Inter;
+  font-size: 16pt;
+  font-weight: bold;
+  font-style:italic;
+}
+
 .testingHeader {
   display:flex;
   flex-direction: row;
@@ -11,6 +31,21 @@
 .testingTitle {
   font-size:48pt;
   color: #A90206;
-  text-align:center;
   padding: 3% 0 3% 0;
+}
+
+.variables {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom:10%;
+}
+
+.userTesting {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
 }
